@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("img/backgroundc.jpeg") ;
+    background-size: cover;
+}
+
+#content {
+    background: #F280B6;
+    width: 70%;
+    margin: auto; 
+    padding: 1%; 
+    border-radius: 5px;
+}
+
+#images img {
+    display: block;        /* puts each image on its own line */
+    margin: 15px auto;     /* auto left/right margins center it */
+    width: 250px;
+    border: 3px solid #2a5d84;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #f1f1f1;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 3px dotted #F26052;
+    padding: 5px 10px;
+}
+
+h1 {
+    color:#a91a5d;
+}
+
+h2 {
+    color:#9d0049;
+}
