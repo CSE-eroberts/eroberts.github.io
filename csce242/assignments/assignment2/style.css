@@ -12,16 +12,6 @@ body{
     border-radius: 5px;
 }
 
-#images img {
-    display: block;        /* puts each image on its own line */
-    margin: 15px auto;     /* auto left/right margins center it */
-    width: 250px;
-    border: 3px solid #2a5d84;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: #f1f1f1;
-}
-
 table {
     border-collapse: collapse;
 }
@@ -29,6 +19,10 @@ table {
 td, th {
     border: 3px dotted #F26052;
     padding: 5px 10px;
+}
+
+th{
+    background: #F26052;
 }
 
 h1 {
