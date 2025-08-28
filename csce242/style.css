@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("img/mainback.jpeg") ;
+    background-size: cover;
+}
+
+#content {
+    background: #e1898f;
+    width: 70%;
+    margin: auto; /*center*/
+    padding: 1%; /* get text away from sides*/
+    border-radius: 5px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;   /* removes underline */
+    color: #D9969B;         
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+  }
+
+#repo-link {
+    color: #BBBF99;  /* navy blue */
+    font-style: italic;
+}
+
+#assignments li {
+    margin: 8px 0;
+    padding: 10px;
+    background-color: #f1f9ff;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+h1 {
+    color:#44739a;
+}
+
+h2 {
+    color:#9b74c2;
+}
