@@ -1,0 +1,273 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+  }
+  
+#main-header {
+  display: flex;
+  align-items: center;   /* vertically center logo + text */
+  justify-content: space-between; /* space out header content */
+  padding: 8px;
+  font-family: 'Times New Roman', Times, serif;
+  color:white;
+  background:black ;
+}
+
+nav ul{
+    padding-left: 0;
+    list-style-type: none; /*removes the bullets*/
+}
+
+nav a{
+    text-decoration: none;
+}
+
+#main-nav{
+    position: absolute;
+    top:.2%;
+    left:2.5%;
+}
+
+#main-nav a{
+    color:white;
+    padding:5px;
+    display:inline-block;
+    font-size: 10px;
+}
+
+#main-nav a:hover{
+    background: red;
+}
+
+#main-nav li{
+    display:inline;
+}
+
+#main-nav li:not(:last-child)::after{
+    content:"|";
+    color:white;
+    font-size: 10px;
+}
+.usc-logo{
+  width:300px;
+  height:auto;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+/* Navbar */
+.navbar {
+  background: #73000a; /* USC Garnet */
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  font-weight: bold;
+}
+  #navbar li:not(:last-child)::after{
+    content:"";
+}
+.img-search{
+  width:65px;
+  height:auto;
+}
+
+#showcase{
+  position:relative;
+}
+#showcase p {
+  background: rgba(255, 254, 254, 0.257);
+  color:#73000a;
+  padding: 10px;
+  width: 800px;
+  height:auto;
+  position:absolute;
+  bottom:5%;
+  left:0%;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+#main-content p{
+  max-width: 750px;     /* limit line length (paper-like column) */
+  margin: 20px auto;    /* center the block horizontally */
+  text-align: left;     /* keep text left-aligned inside */
+  line-height: 1.6;
+  font-size: 20px;
+}
+/* Two Column */
+.two-col {
+  display: flex;
+  background: #73000a;
+  color:white;
+}
+.two-col h2{
+  padding:5px;
+  font-size: 50px;
+}
+.two-col p{
+  font-size:small;
+}
+.two-col h2, p{
+  padding:30px;
+}
+.two-col img{
+  padding: 0%;
+  margin:0;
+  margin-right: 0%;
+}
+ /* CTA Section */
+ .programs {
+    display: flex;
+    flex-direction: column;   /* stack items vertically */
+    justify-content: center;  /* center vertically if section has height */
+    align-items: center;      /* center horizontally */
+    text-align: center;       /* center text inside */
+    padding-bottom: 40px;
+    background:#EDEDED;
+ }
+ .programs h2 {
+  font-size: 40px;
+  color: #73000a;
+  margin-bottom: 5px;   /* reduce gap below heading */
+}
+
+.programs p {
+  max-width: 600px;      /* keep text readable */
+  margin-bottom: 30px;   /* space before buttons */
+}
+.programs .btn {
+  display: inline-block;
+  margin: 0 20px;        /* horizontal spacing */
+  padding: 10px 20px;
+  background: #73000a;
+  color: white;
+  text-decoration: none;
+  border-radius: 0px;
+  font-weight: bold;
+  border: 3px solid #73000a;
+  box-shadow: 0 0 0 3px white; /* adds extra border outside */
+}
+
+.programs .btn:hover{
+  background:white;
+  color:#73000a;
+  border:white;
+  box-shadow:0 0 0 3px #73000a;
+}
+
+.impact h1{
+  background:black;
+}
+
+.circle{
+  background:#73000a;
+  color:white;
+}
+.circle h2{
+  text-align: center;
+  max-width: 100px;
+}
+
+
+
+
+
+  
+ 
+  
+ 
+  
+
+  
+ 
+
+  
+  .two-col .text, .two-col .image {
+    flex: 1;
+  }
+  
+  /* Three Column */
+  .three-col {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f5f5f5;
+  }
+  
+  .card {
+    flex: 1;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+ 
+
+
+
+
+
+
+
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  
+  footer .footer-col h4 {
+    margin-bottom: 1rem;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin: 0.5rem 0;
+  }
+  
+  footer ul a {
+    color: #fff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .columns{
+        display:flex;
+    }
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .hero-text h1 {
+      font-size: 1.75rem;
+    }
+  
+  }
+  
