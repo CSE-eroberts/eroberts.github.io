@@ -1,0 +1,42 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("images/safaribg.jpeg") ;
+    background-size: cover;
+}
+
+#content {
+    background: #F2CB05;
+    width: 70%;
+    margin: auto; /*center*/
+    padding: 1%; /* get text away from sides*/
+    border-radius: 5px;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px dotted #F25C05;
+    padding: 5px 10px;
+}
+
+th{
+    background: #F28705;
+}
+
+/*Images*/
+#giraffe-pic {
+    box-shadow: 7px 7px #F29F05;
+}
+
+/* Typography */
+h1 {
+    color:#F25C05;
+}
+
+h2 {
+    color:#F28705;
+}
