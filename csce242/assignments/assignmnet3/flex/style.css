@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background:  #fdfde8;
+    color: #7cbbd2;
+  }
+
+  #content {
+    width:95%;
+    margin:auto;
+    background:  #fdfde8; ;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+ 
+
+  #main-header{
+    color: #7cbbd2;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  nav.main-nav {
+    background: #d97c7c;
+  }
+  nav.main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  nav.main-nav ul li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  nav.main-nav ul li a:hover {
+    background: white;
+    color: #d97c7c;
+}
+  /* First section layout (Ideas) */
+  .ideas {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  article {
+    background: #fdfde8;
+    padding: 1rem;
+  }
+  article img {
+    max-width: 100%;
+    
+  }
+  
+  article h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Second part layout */
+  .lower-container {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  aside.sidebar {
+    background: #d97c7c;
+    color: #fff;
+    flex: 0 0 200px;
+    padding: 1rem;
+  }
+  aside.sidebar ul {
+    list-style: none;
+    margin-top: 0.5rem;
+  }
+  aside.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 0.25rem 0;
+  }
+  aside.sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .grid {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .grid article {
+    flex: 1 1 calc(33% - 1rem);
+    background: #77a3a3;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1rem;
+    min-width: 250px;
+  }
+  .grid article img {
+    margin: 0.5rem 0;
+    max-width: 100%;
+  }
+
+  footer {
+    text-align: center;
+    background: #d97c7c;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav.main-nav ul {
+      flex-direction: column;
+    }
+    .ideas {
+      flex-direction: column;
+    }
+    .lower-container {
+      flex-direction: column;
+    }
+    .grid article {
+      flex: 1 1 100%;
+    }
+  }
